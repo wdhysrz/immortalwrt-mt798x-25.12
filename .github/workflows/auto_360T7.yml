@@ -57,7 +57,7 @@ jobs:
           # 下载编译所需的源码包
           make download -j$(nproc)
           # 开始编译
-          make -j$(nproc)
+          make -j$(nproc) V=s
           
           # 删除 packages 目录（不需要上传）
           rm -rf bin/targets/mediatek/filogic/packages

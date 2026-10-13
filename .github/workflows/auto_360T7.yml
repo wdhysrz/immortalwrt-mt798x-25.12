@@ -53,6 +53,7 @@ jobs:
           
           # 复制你自己的配置文件
           cp ../defconfig/rax3000m-360T7.config .config
+          make defconfig
           # 下载编译所需的源码包
           make download -j$(nproc)
           # 开始编译
